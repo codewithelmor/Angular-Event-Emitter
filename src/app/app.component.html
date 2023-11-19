@@ -1,0 +1,32 @@
+<div class="container pt-5">
+  <div class="row">
+    <div class="col-12">
+      <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#addModal">Add Friend</button>
+      <table class="table table-border table-hover table-sm">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Given Name</th>
+            <th>Family Name</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let friend of friendService.friends">
+            <td>{{friend.id}}</td>
+            <td>{{friend.givenName}}</td>
+            <td>{{friend.familyName}}</td>
+            <td>
+              <button class="btn btn-sm btn-outline-warning" (click)="update(friend)" data-bs-toggle="modal" data-bs-target="#updateModal">Update</button>
+              &nbsp;|&nbsp;
+              <button class="btn btn-sm btn-outline-danger" (click)="delete(friend)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<app-add-friend (addFriend)="addFriend($event)"></app-add-friend>
+<app-update-friend [existingFriend]="existingFriend" (updateFriend)="updateFriend($event)"></app-update-friend>
