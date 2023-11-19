@@ -1,6 +1,6 @@
 # AngularEventEmitter
 
-![2023-11-19 17-31-06](https://github.com/codewithelmor/Angular-Event-Emitter/assets/44918452/5eb3348c-7cbb-40ae-a393-7499683c1abc)
+![2023-11-19 17-31-06](https://github.com/codewithelmor/Angular-Event-Emitter/assets/44918452/5905be8a-8e0b-426c-941b-2fd79cea31c9)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
 
